@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  {
-
+x:string='thamer'
   // data:any;
   // constructor(private http: HttpClient) {}
 

@@ -1,0 +1,17 @@
+<div>
+    <button class='button' (click)="GoTopost()"> Add product </button>
+    <button class='button' > Signout </button>
+ </div>
+
+
+<div *ngFor="let cars of data" class='home'>
+    <div class="producte">
+      <img class="imge" src= {{cars.imageUrl}} alt="img" />
+      <h2>{{cars.name}}</h2>
+      <p>{{cars.description}}</p>
+      <span>{{cars.price}}</span>
+      <button class="button" (click)="deletecar(cars.id)" >Delete</button>
+      <button class="button" (click)="Gotoupdate(cars)" >Update</button>
+    </div>
+
+</div>

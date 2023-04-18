@@ -1,0 +1,40 @@
+<div class="forme">
+    <ul>
+      <h1 >Add </h1>
+      <input 
+      [(ngModel)]="prod.name"
+        type='text'
+        label='Name'
+        placeholder='Enter name'
+      />
+      <textarea [(ngModel)]="prod.description"
+      class='textarea'
+        rows="5"
+        type="text"
+        placeholder="Enter Description">
+      </textarea>
+      <input 
+        [(ngModel)]="prod.price"
+        class='input'
+        type='number'
+        label='Price'
+        placeholder='Enter Price'
+      />
+      <input 
+        [(ngModel)]="prod.imageUrl"
+        class='input'
+        type='text'
+        label='image'
+        placeholder='Enter Image'
+      />
+      <input 
+      [(ngModel)]="prod.category"
+        class='input'
+        type='text'
+        label='Category'
+        placeholder='Enter Categoey'
+      />
+      <button class='button' (click)="postproduct()">Add product</button>
+    </ul>
+  </div>
+  
