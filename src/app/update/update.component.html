@@ -1,0 +1,41 @@
+<div class="forme">
+    <ul>
+      <h1 > Update </h1>
+      <input 
+      [(ngModel)]="product.name"
+      
+        type='text'
+        label='Name'
+        placeholder='Enter name'
+      />
+      <!-- <h1>{{product.name}}</h1> -->
+      <textarea [(ngModel)]="product.description"
+      class='textarea'
+        rows="5"
+        type="text"
+        placeholder="Enter Description">
+      </textarea>
+      <input 
+        [(ngModel)]="product.price"
+        class='input'
+        type='number'
+        label='Price'
+        placeholder='Enter Price'
+      />
+      <input 
+        [(ngModel)]="product.imageUrl"
+        class='input'
+        type='text'
+        label='image'
+        placeholder='Enter Image'
+      />
+      <input 
+      [(ngModel)]="product.category"
+        class='input'
+        type='text'
+        label='Category'
+        placeholder='Enter Categoey'
+      />
+      <button class='button' (click)="updatecar()">Update product</button>
+    </ul>
+  </div>
